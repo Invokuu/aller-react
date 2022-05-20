@@ -1,0 +1,13 @@
+$articleCardColor: #eceff1;
+
+article {
+  background-color: $articleCardColor;
+  border-radius: 0.2em;
+  overflow: hidden;
+}
+
+@for $i from 1 through 12 {
+  .width-#{$i} {
+    grid-column: span #{$i};
+  }
+}

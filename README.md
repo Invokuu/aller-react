@@ -1,3 +1,39 @@
+# Aller Media React App
+
+I made this as requested by [Aller Media](https://www.aller.no/) after interview.
+
+I felt like my [React](https://reactjs.org/) knowledge was pretty limited, so I decided to do some research.
+I've been doing a course on [Codecademy](https://www.codecademy.com/) ([React](https://www.codecademy.com/learn/react-101) and [React Router](https://www.codecademy.com/learn/learn-react-router)) and watched videos, now I feel like I have a better grasp on the topic.
+From what I've learned best practice is using Function component and not Class components, but I've also seen some mention that Function components are good for stateless components while Class components are good for stateful components.
+Would like to know your take on this. I like classes even though they might be considered more verbose.
+
+I also learned some about [Next.js](https://nextjs.org/) and also looked a little at [Svelte](https://svelte.dev/), but decided to put this aside for now.
+I've used [Axios](https://axios-http.com/) in this project to use a common library, but I am also familiar with [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) (and [XHR](https://developer.mozilla.org/en-US/docs/Glossary/XHR_(XMLHttpRequest))).
+
+This application is written in [TypeScript](https://www.typescriptlang.org/)([X](https://reactjs.org/docs/introducing-jsx.html)) because I know it's something Aller use even though it's not a part of the assignment I was given.
+For styling, I chose to use [SASS](https://sass-lang.com/). Not sure what Aller use, but wanted to include this as I often use it.
+I decided to include one SCSS-file per component with same name, I'm not sure what the best practice is and would like to know more about this.
+
+The package manager of choice is [`yarn`](https://yarnpkg.com/). I'm familiar with [`npm`](https://www.npmjs.com/) commands.
+I know of [`pnpm`](https://pnpm.io/), but I've never used it.
+From what I've seen it's apparently way faster and space efficient, so I might give it a try in a future project.
+
+For hosting, I'm using [Vercel](https://vercel.com/) and the [**demo is here**](https://aller.andydev.net).
+
+To recreate the template used in this project, you run:
+```sh
+# replace "my-app" with directory name (or . for current)
+yarn create react-app my-app --template typescript
+```
+...and then you install these packages:
+```sh
+yarn add sass react-router-dom @types/react-router-dom axios uuid @types/uuid
+```
+
+**- Anders**
+
+*Below is the original part of `README.md` (from the template) which shows how to run and build the app.*
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

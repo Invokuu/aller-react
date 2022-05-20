@@ -1,0 +1,51 @@
+$headerColor: #f44336;
+$activeNavColor: #d32f2f;
+$hoverNavColor: #b71c1c;
+
+.page-header {
+  background-color: $headerColor;
+  color: white;
+  user-select: none;
+}
+
+.page-header > .responsive-container {
+  display: grid;
+  grid-template: auto / 1fr auto;
+  align-items: center;
+}
+
+.page-title {
+  margin: 0.3em 0;
+  cursor: default;
+}
+
+.page-header nav a {
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.page-header nav a.active {
+  background-color: $activeNavColor;
+}
+
+.page-header nav a:hover {
+  background-color: $hoverNavColor;
+}
+
+.page-header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+
+.page-header nav,
+.page-header nav li {
+  height: 100%;
+}

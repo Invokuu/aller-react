@@ -1,0 +1,44 @@
+/* Material Colors */
+$btnColor: #2196f3;
+$linkColor: #212121;
+
+.article-header {
+  display: grid;
+  grid-template: auto / 1fr auto;
+  padding: 3px;
+  gap: 3px;
+}
+
+.article-header .actions {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.article-header .edit-btn {
+  color: white;
+  background-color: $btnColor;
+  border-radius: 0.2em;
+  border: none;
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+}
+
+.article-header h2,
+.article-header input {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.article-header input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0.2em;
+  outline: none;
+}
+
+.article-header a {
+  color: $linkColor;
+}

@@ -1,0 +1,13 @@
+$footerColor: #e0e0e0;
+$footerTextColor: #424242;
+
+.page-footer {
+  background-color: $footerColor;
+}
+
+.page-footer p {
+  color: #424242;
+  font-size: 0.9em;
+  margin: 0.5em 0;
+  text-align: center;
+}

@@ -1,0 +1,6 @@
+/* Container inside, so applying this to that instead */
+.article-grid > .responsive-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

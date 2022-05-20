@@ -1,0 +1,5 @@
+.article-row  {
+  display: grid;
+  grid-template: 1fr / repeat(12, 1fr);
+  grid-gap: 5px;
+}
