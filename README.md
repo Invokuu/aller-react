@@ -30,7 +30,7 @@ yarn create react-app my-app --template typescript
 yarn add sass react-router-dom @types/react-router-dom axios uuid @types/uuid
 ```
 
-**- Anders**
+**- Andy**
 
 *Below is the original part of `README.md` (from the template) which shows how to run and build the app.*
 
