@@ -6,6 +6,7 @@ article {
   overflow: hidden;
 }
 
+/* Using for loop to simplify this, but it essentially make the element span 1-12 of the parent */
 @for $i from 1 through 12 {
   .width-#{$i} {
     grid-column: span #{$i};

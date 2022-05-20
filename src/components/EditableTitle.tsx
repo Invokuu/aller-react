@@ -1,11 +1,16 @@
 import {useState} from 'react';
 import './scss/EditableTitle.scss';
 
+// url for the link in the title
+// value is just the text displayed
 interface EditableTitleProps {
     url: string;
     value: string;
 }
 
+// EditableTitle is for the title of the article.
+// This allows you to edit by clicking the button next to the text,
+// then it will turn into an input field instead.
 export function EditableTitle(props: EditableTitleProps): JSX.Element {
     const [value, setValue] = useState(props.value);
     const [editMode, setEditMode] = useState(false);
@@ -18,11 +23,13 @@ export function EditableTitle(props: EditableTitleProps): JSX.Element {
         currentValue = evt.target.value;
     }
 
+    // Quality of life fix that allows you to press enter or esc to leave edit mode
     function handleCompletion(evt: any) {
         if (evt.key !== 'Enter' && evt.key !== 'Escape') return;
         toggleEdit();
     }
 
+    // This toggles between input and link
     function toggleEdit() {
         if (editMode) setValue(currentValue);
         setEditMode(!editMode);

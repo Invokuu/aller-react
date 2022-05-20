@@ -13,6 +13,11 @@ I've used [Axios](https://axios-http.com/) in this project to use a common libra
 This application is written in [TypeScript](https://www.typescriptlang.org/)([X](https://reactjs.org/docs/introducing-jsx.html)) because I know it's something Aller use even though it's not a part of the assignment I was given.
 For styling, I chose to use [SASS](https://sass-lang.com/). Not sure what Aller use, but wanted to include this as I often use it.
 I decided to include one SCSS-file per component with same name, I'm not sure what the best practice is and would like to know more about this.
+It currently doesn't look too great on mobile, but might fix this.
+
+In the json data there was a type value for row and article, but it didn't seem to be too relevant in this project.
+I haven't taken that much into consideration for now.
+Would love to know more about what this is being used for.
 
 The package manager of choice is [`yarn`](https://yarnpkg.com/). I'm familiar with [`npm`](https://www.npmjs.com/) commands.
 I know of [`pnpm`](https://pnpm.io/), but I've never used it.

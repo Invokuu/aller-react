@@ -1,5 +1,6 @@
 import {ResponsiveContainer} from './ResponsiveContainer';
 
+// This is just the about page on the site
 export function About(): JSX.Element {
     return (
         <main>

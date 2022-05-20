@@ -6,10 +6,12 @@ import {Exception} from 'sass';
 import {v4 as uuidV4} from 'uuid';
 import {ResponsiveContainer} from './ResponsiveContainer';
 
+// url is the json endpoint url
 export interface ArticleGridProps {
     url: string;
 }
 
+// ArticleGrid component handles fetching the data and separating it into ArticleRows
 export function ArticleGrid(props: ArticleGridProps): JSX.Element {
     const [articleData, setArticleData] = useState([]);
     const [loadMessage, setLoadMessage] = useState('Loading articles...');

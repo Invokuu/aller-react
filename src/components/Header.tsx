@@ -2,6 +2,7 @@ import {NavLink} from 'react-router-dom';
 import './scss/Header.scss';
 import {ResponsiveContainer} from './ResponsiveContainer';
 
+// The header used globally on the page
 export function Header(): JSX.Element {
     return (
         <header className="page-header">
