@@ -19,21 +19,21 @@ export function EditableTitle(props: EditableTitleProps): JSX.Element {
     let currentValue = value;
 
     // Updates currentValue onInput
-    function valueUpdate(evt: any) {
+    const valueUpdate = (evt: any) => {
         currentValue = evt.target.value;
-    }
+    };
 
     // Quality of life fix that allows you to press enter or esc to leave edit mode
-    function handleCompletion(evt: any) {
+    const handleCompletion = (evt: any) => {
         if (evt.key !== 'Enter' && evt.key !== 'Escape') return;
         toggleEdit();
-    }
+    };
 
     // This toggles between input and link
-    function toggleEdit() {
+    const toggleEdit = () => {
         if (editMode) setValue(currentValue);
         setEditMode(!editMode);
-    }
+    };
 
     return (
         <header className="article-header">
