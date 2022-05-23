@@ -5,14 +5,24 @@ $linkColor: #212121;
 .article-header {
   display: grid;
   grid-template: auto / 1fr auto;
-  padding: 3px;
+  padding: 0.2em 0.5em;
   gap: 3px;
+  position: relative;
 }
 
 .article-header .actions {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+/* Temporary fix to improve mobile appearance */
+@media only screen and (max-width: 600px) {
+  .article-header .actions {
+    position: absolute;
+    right: 0.5em;
+    top: -3em;
+  }
 }
 
 .article-header .edit-btn {
@@ -23,6 +33,15 @@ $linkColor: #212121;
   width: 1.5em;
   height: 1.5em;
   cursor: pointer;
+  transition: opacity 0.2s, box-shadow 0.1s;
+}
+
+.article-header .edit-btn:hover {
+  opacity: 0.8;
+}
+
+.article-header .edit-btn:active {
+  box-shadow: inset 0 0 5px #424242;
 }
 
 .article-header h2,
