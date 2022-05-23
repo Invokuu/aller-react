@@ -1,7 +1,7 @@
 import axios, {AxiosResponse} from 'axios';
 import './scss/ArticleGrid.scss';
 import {useEffect, useState} from 'react';
-import {ArticleRow, ArticleRowData} from './ArticleRow';
+import {ArticleRow, ArticleRowProps} from './ArticleRow';
 import {Exception} from 'sass';
 import {v4 as uuidV4} from 'uuid';
 import {ResponsiveContainer} from './ResponsiveContainer';
@@ -40,7 +40,7 @@ export function ArticleGrid(props: ArticleGridProps): JSX.Element {
     return (
         <main className="article-grid">
             <ResponsiveContainer>
-                {articleData.length > 0 ? articleData.map((articleRow: ArticleRowData) => {
+                {articleData.length > 0 ? articleData.map((articleRow: ArticleRowProps) => {
                     return <ArticleRow key={uuidV4()} columns={articleRow.columns} />;
                 }) : (
                     <article className="inner-spacing">

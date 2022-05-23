@@ -5,7 +5,7 @@ I made this as requested by [Aller Media](https://www.aller.no/) after interview
 I felt like my [React](https://reactjs.org/) knowledge was pretty limited, so I decided to do some research.
 I've been doing a course on [Codecademy](https://www.codecademy.com/) ([React](https://www.codecademy.com/learn/react-101) and [React Router](https://www.codecademy.com/learn/learn-react-router)) and watched videos, now I feel like I have a better grasp on the topic.
 From what I've learned best practice is using Function component and not Class components, but I've also seen some mention that Function components are good for stateless components while Class components are good for stateful components.
-Would like to know your take on this. I like classes even though they might be considered more verbose.
+Would like to know what you do here. I like classes (but used functions) even though they might be considered more verbose.
 
 I also learned some about [Next.js](https://nextjs.org/) and also looked a little at [Svelte](https://svelte.dev/), but decided to put this aside for now.
 I've used [Axios](https://axios-http.com/) in this project to use a common library, but I am also familiar with [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) (and [XHR](https://developer.mozilla.org/en-US/docs/Glossary/XHR_(XMLHttpRequest))).

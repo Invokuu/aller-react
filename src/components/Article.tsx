@@ -4,31 +4,22 @@ import {EditableTitle} from './EditableTitle';
 import {ArticleImage} from './ArticleImage';
 
 // The article data as presented in the json
-export interface ArticleData {
-    type: string;
+export interface ArticleProps {
+    type?: string;
     width: number;
     url: string;
     title: string;
     imageUrl: string;
 }
 
-// Passing ArticleData as a data prop to this component for convenience,
-// any better ways to solve this or should I just pass as separate parameters?
-interface ArticleProps {
-    data: ArticleData;
-}
-
 // The Article component is the box for each individual article
 export function Article(props: ArticleProps): JSX.Element {
-    // Let's destructure the relevant data
-    const {width, url, title, imageUrl} = props.data;
-
     return (
-        <article className={`width-${width}`}>
-            <a href={url} target="_blank" rel="noreferrer">
-                <ArticleImage src={imageUrl} title={title} width={width} />
+        <article className={`width-${props.width}`}>
+            <a href={props.url} target="_blank" rel="noreferrer">
+                <ArticleImage src={props.imageUrl} title={props.title} width={props.width} />
             </a>
-            <EditableTitle url={url} value={title} />
+            <EditableTitle url={props.url} value={props.title} />
         </article>
     );
 }
