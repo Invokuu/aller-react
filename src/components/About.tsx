@@ -36,7 +36,7 @@ export function About(): JSX.Element {
                     yarn add sass react-router-dom @types/react-router-dom axios uuid @types/uuid
                     </code></p>
                     <p><a href="https://github.com/invokuu/aller-react" target="_blank" rel="noreferrer">You can find the repository here.</a></p>
-                    <p><b>- Andy</b></p>
+                    <p><strong>- Andy</strong></p>
                 </article>
             </ResponsiveContainer>
         </main>

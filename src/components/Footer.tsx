@@ -7,7 +7,7 @@ export function Footer(): JSX.Element {
         <footer className="page-footer">
             <ResponsiveContainer>
                 <p>Made by Andy</p>
-                <p>Not an official <a href="https://dagbladet.no/" target="_blank" rel="noreferrer">Dagbladet</a> site</p>
+                <p><strong>Not</strong> an official <a href="https://dagbladet.no/" target="_blank" rel="noreferrer">Dagbladet</a> site</p>
             </ResponsiveContainer>
         </footer>
     );
